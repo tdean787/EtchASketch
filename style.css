@@ -1,0 +1,43 @@
+h2{
+    margin: 0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.border{
+    grid-column-gap: 0px;
+    
+    display: grid;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+
+.grid-cell{
+    height: 3em;
+    border-width: thin;
+    border-style: solid;
+}
+
+.resetContainer{
+    border-style: solid;
+    border-width: thin;
+    width: 35%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.colorContainer{
+    border-style: solid;
+    border-width: thin;
+    margin: 1em;
+    padding: 1em;
+    width: 35%;
+}

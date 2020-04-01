@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="parentContainer">
+        <div class="sketchContainer">
         <div class="grid-container">
             <div class="border">
                 <div class="grid-cell"></div>
@@ -90,19 +91,25 @@
                 <div class="grid-cell"></div>
             </div>
         </div>
+        </div>
     </div>
+    <div class="optionContainer">
     <div class="resetContainer">
     <h2> Want to start over? </h2>
     <button id="resetButton"> Reset </button>
     </div>
 
     <div class="colorContainer">
-    <label for="bgBlack"> Sketch in black only </label>
-    <input type="checkbox" id="bgBlack">
-    <br>
-    <label for="colorSelect"> Write in your own color!</label>
-    <input type="text" id="colorSelect" placeholder="red">
-    </div>
+        <div class="bgBlackBox">
+        <label for="bgBlack"> Sketch in black only </label>
+        <input type="checkbox" id="bgBlack">
+        </div>
+            <div class="colorSelectBox">
+        <label for="colorSelect"> Write in your own color!</label>
+        <input type="text" id="colorSelect" placeholder="red">
+            </div>
+            
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -26,6 +26,15 @@ body{
     border-style: solid;
 }
 
+.parentContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.sketchContainer{
+    width: 500px;
+    margin: 1em;
+}
 .resetContainer{
     border-style: solid;
     border-width: thin;
@@ -38,6 +47,37 @@ body{
     border-style: solid;
     border-width: thin;
     margin: 1em;
-    padding: 1em;
+    /* padding: 1em; */
     width: 35%;
+    display: grid;
 }
+
+.optionContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.bgBlackBox{
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+.colorSelectBox{
+    padding: 1em;
+}
+
+@media only screen and (max-width: 500px) {
+    .resetContainer {
+      width: unset;
+    }
+    .colorContainer {
+        width: unset;
+        height: 7em;
+        grid-template-columns: 1fr 1fr;
+    }
+    .optionContainer{
+        display: unset;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+  }

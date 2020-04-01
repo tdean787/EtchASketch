@@ -3,6 +3,7 @@ const resetButton = document.querySelector("#resetButton")
 const bgBlackCheckbox = document.querySelector("#bgBlack")
 let gridCellList = document.querySelectorAll(".grid-cell")
 let colorSelectInput = document.querySelector("#colorSelect")
+let colorSelectBox = document.querySelector(".colorSelectBox")
 
 var randomColor = function(){
     var red = Math.floor(Math.random() * 255)
@@ -27,6 +28,12 @@ bgBlackCheckbox.addEventListener("click", function(){
             gridCellList[i].style.background = "white"
         }
 })
+
+function changeBackground( ){
+    colorSelectBox.style.background = colorSelectInput.value;
+}
+
+colorSelectInput.addEventListener("input", changeBackground)
 
 function reset(){
     for(let i = 0; i < gridCellList.length; i++){
